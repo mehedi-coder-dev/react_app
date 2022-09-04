@@ -5,7 +5,7 @@ import classes from "../styles/Summary.module.css";
 
 export default function Summary({ score, noq }) {
   const imgKeywork = useMemo(() => {
-    console.log("summary");
+
     if ((score / (noq * 5)) * 100 < 50) {
       return "failed";
     } else if ((score / (noq * 5)) * 100 < 75) {
